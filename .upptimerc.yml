@@ -6,17 +6,14 @@ sites:
   - name: Ariaxa Web
     url: https://web.ariaxa.com
     method: POST
-    icon:
     skipDeleteIssues: true
   - name: Ariaxa Apps
     url: https://ariaxa.com/app-project/
     method: POST
-    icon:
     skipDeleteIssues: true
   - name: Ariaxa SuperAdmin
     url: https://ariaxa.com/config/login_su.php
     method: POST
-    icon:
     skipDeleteIssues: true
 
 status-website:
