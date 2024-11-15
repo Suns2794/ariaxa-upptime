@@ -5,15 +5,25 @@ repo: ariaxa-upptime # The name of this repository
 sites:
   - name: Ariaxa Web
     url: https://web.ariaxa.com
+    method: POST
+    icon:
+    skipDeleteIssues: true
   - name: Ariaxa Apps
     url: https://ariaxa.com/app-project/
+    method: POST
+    icon:
+    skipDeleteIssues: true
   - name: Ariaxa SuperAdmin
     url: https://ariaxa.com/config/login_su.php
+    method: POST
+    icon:
+    skipDeleteIssues: true
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: ariaxa.com
+  theme: dark
   baseUrl: /ariaxa-upptime
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime Ariaxa
