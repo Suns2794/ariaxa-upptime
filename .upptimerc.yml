@@ -15,6 +15,10 @@ sites:
     url: https://ariaxa.com/config/login_su.php
     method: POST
     skipDeleteIssues: true
+  - name: Ariaxa Test
+    url: https://pruebas.ariaxa.com/config/login_su.php
+    method: POST
+    skipDeleteIssues: true
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
