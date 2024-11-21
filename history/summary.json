@@ -59,18 +59,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/pruebas.ariaxa.com.ico",
     "slug": "ariaxa-test",
     "status": "down",
-    "uptime": "58.11%",
-    "uptimeDay": "52.20%",
-    "uptimeWeek": "58.11%",
-    "uptimeMonth": "58.11%",
-    "uptimeYear": "58.11%",
+    "uptime": "56.84%",
+    "uptimeDay": "52.06%",
+    "uptimeWeek": "56.84%",
+    "uptimeMonth": "56.84%",
+    "uptimeYear": "56.84%",
     "time": 718,
-    "timeDay": 918,
+    "timeDay": 1194,
     "timeWeek": 718,
     "timeMonth": 718,
     "timeYear": 718,
     "dailyMinutesDown": {
-      "2024-11-21": 0,
+      "2024-11-21": 37,
       "2024-11-20": 688
     }
   }
