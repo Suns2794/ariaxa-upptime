@@ -4,9 +4,9 @@
     "url": "https://web.ariaxa.com",
     "icon": "https://icons.duckduckgo.com/ip3/web.ariaxa.com.ico",
     "slug": "ariaxa-web",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -15,7 +15,9 @@
     "timeWeek": 3546,
     "timeMonth": 5758,
     "timeYear": 5758,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2024-12-01": 0
+    }
   },
   {
     "name": "Ariaxa Apps",
@@ -59,18 +61,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/pruebas.ariaxa.com.ico",
     "slug": "ariaxa-test",
     "status": "down",
-    "uptime": "38.66%",
+    "uptime": "37.84%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "37.14%",
-    "uptimeMonth": "38.66%",
-    "uptimeYear": "38.66%",
+    "uptimeMonth": "37.84%",
+    "uptimeYear": "37.84%",
     "time": 620,
     "timeDay": 109,
     "timeWeek": 720,
     "timeMonth": 620,
     "timeYear": 620,
     "dailyMinutesDown": {
-      "2024-12-01": 125,
+      "2024-12-01": 475,
       "2024-11-30": 1367,
       "2024-11-29": 691,
       "2024-11-28": 683,
