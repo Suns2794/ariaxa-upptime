@@ -62,7 +62,7 @@
     "slug": "ariaxa-test",
     "status": "down",
     "uptime": "41.06%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.63%",
     "uptimeWeek": "49.53%",
     "uptimeMonth": "41.06%",
     "uptimeYear": "41.06%",
@@ -72,7 +72,7 @@
     "timeMonth": 588,
     "timeYear": 588,
     "dailyMinutesDown": {
-      "2024-12-10": 0,
+      "2024-12-10": 5,
       "2024-12-08": 852,
       "2024-12-07": 1359,
       "2024-12-06": 740,
