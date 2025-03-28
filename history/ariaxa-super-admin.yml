@@ -1,7 +1,7 @@
 url: https://ariaxa.com/config/login_su.php
-status: down
-code: 403
-responseTime: 7
-lastUpdated: 2025-03-28T07:08:54.533Z
+status: up
+code: 200
+responseTime: 29
+lastUpdated: 2025-03-28T07:26:49.082Z
 startTime: 2024-11-15T15:50:04.784Z
 generator: Upptime <https://github.com/upptime/upptime>
