@@ -1,7 +1,7 @@
 url: https://pruebas.ariaxa.com/config/login_su.php
-status: up
-code: 200
-responseTime: 518
-lastUpdated: 2025-04-18T13:31:41.517Z
+status: down
+code: 503
+responseTime: 197
+lastUpdated: 2025-04-18T23:15:22.681Z
 startTime: 2024-11-19T21:47:02.857Z
 generator: Upptime <https://github.com/upptime/upptime>
