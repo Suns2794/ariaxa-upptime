@@ -5,19 +5,35 @@ repo: ariaxa-upptime # The name of this repository
 sites:
   - name: Ariaxa Web
     url: https://web.ariaxa.com
-    method: POST
+    method: GET
+    maxResponseTime: 10000
+    retryCount: 3
+    expectedStatusCodes: [200, 301, 302]
     skipDeleteIssues: true
+
   - name: Ariaxa Apps
     url: https://ariaxa.com/app-project/
-    method: POST
+    method: GET
+    maxResponseTime: 10000
+    retryCount: 3
+    expectedStatusCodes: [200, 301, 302]
     skipDeleteIssues: true
+
   - name: Ariaxa SuperAdmin
     url: https://ariaxa.com/config/login_su.php
-    method: POST
+    method: GET
+    maxResponseTime: 10000
+    retryCount: 3
+    expectedStatusCodes: [200, 301, 302, 403] # puedes incluir 403 si no tiene sesión
+
     skipDeleteIssues: true
+
   - name: Ariaxa Test
     url: https://pruebas.ariaxa.com/config/login_su.php
-    method: POST
+    method: GET
+    maxResponseTime: 10000
+    retryCount: 3
+    expectedStatusCodes: [200, 301, 302, 403]
     skipDeleteIssues: true
 
 status-website:
