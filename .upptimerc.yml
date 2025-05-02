@@ -25,7 +25,6 @@ sites:
     maxResponseTime: 10000
     retryCount: 3
     expectedStatusCodes: [200, 301, 302, 403] # puedes incluir 403 si no tiene sesión
-
     skipDeleteIssues: true
 
 status-website:
