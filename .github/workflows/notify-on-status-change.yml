@@ -21,11 +21,14 @@ jobs:
           echo "Último commit: $COMMIT_MSG"
 
           # Determinar el tipo de cambio
-          if echo "$COMMIT_MSG" | grep -q "🟥"; then
+          echo "Último commit crudo:"
+          echo "$COMMIT_MSG" | cat -v
+          
+          if echo "$COMMIT_MSG" | grep -qF "🟥"; then
             echo "estado=down" >> $GITHUB_OUTPUT
-          elif echo "$COMMIT_MSG" | grep -q "⚠️"; then
+          elif echo "$COMMIT_MSG" | grep -qF "⚠"; then
             echo "estado=degraded" >> $GITHUB_OUTPUT
-          elif echo "$COMMIT_MSG" | grep -q "🟩"; then
+          elif echo "$COMMIT_MSG" | grep -qF "🟩"; then
             echo "estado=up" >> $GITHUB_OUTPUT
           else
             echo "estado=none" >> $GITHUB_OUTPUT
