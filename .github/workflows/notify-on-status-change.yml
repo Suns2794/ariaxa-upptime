@@ -2,7 +2,7 @@ name: Notificación por cambios de estado en Upptime
 
 on:
   workflow_run:
-    workflows: ["Uptime CI"]
+    workflows: ["Uptime CI", "uptime"]
     types:
       - completed
 
