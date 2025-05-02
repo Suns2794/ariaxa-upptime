@@ -49,3 +49,4 @@ jobs:
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
             -d text="⚠️ Advertencia: uno o más sitios tienen rendimiento degradado. Verifica 👉 https://Suns2794.github.io/ariaxa-upptime/"
+            
