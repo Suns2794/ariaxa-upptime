@@ -23,6 +23,8 @@ jobs:
           # Determinar el tipo de cambio
           if echo "$COMMIT_MSG" | grep -q "🟥"; then
             echo "estado=down" >> $GITHUB_OUTPUT
+          elif echo "$COMMIT_MSG" | grep -q "⚠️"; then
+            echo "estado=degraded" >> $GITHUB_OUTPUT
           elif echo "$COMMIT_MSG" | grep -q "🟩"; then
             echo "estado=up" >> $GITHUB_OUTPUT
           else
@@ -35,3 +37,10 @@ jobs:
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
             -d text="🚨 Caída detectada por Upptime del ambiente de producción. Verifica 👉 https://Suns2794.github.io/ariaxa-upptime/"
+            
+      - name: Enviar notificación si hay rendimiento degradado
+        if: ${{ steps.estado.outputs.estado == 'degraded' }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="⚠️ Advertencia: uno o más sitios presentan rendimiento degradado. Revisa 👉 https://Suns2794.github.io/ariaxa-upptime/"
