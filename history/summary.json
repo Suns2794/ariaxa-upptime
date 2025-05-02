@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 709,
-    "timeDay": 652,
-    "timeWeek": 653,
-    "timeMonth": 679,
-    "timeYear": 709,
+    "time": 711,
+    "timeDay": 697,
+    "timeWeek": 677,
+    "timeMonth": 686,
+    "timeYear": 711,
     "dailyMinutesDown": {}
   },
   {
@@ -22,19 +22,19 @@
     "url": "https://pruebas.ariaxa.com/config/login_su.php",
     "icon": "https://icons.duckduckgo.com/ip3/pruebas.ariaxa.com.ico",
     "slug": "ariaxa-test",
-    "status": "down",
-    "uptime": "90.98%",
-    "uptimeDay": "90.98%",
-    "uptimeWeek": "90.98%",
-    "uptimeMonth": "90.98%",
-    "uptimeYear": "90.98%",
-    "time": 776,
-    "timeDay": 1630,
-    "timeWeek": 1261,
-    "timeMonth": 1188,
-    "timeYear": 776,
+    "status": "degraded",
+    "uptime": "85.74%",
+    "uptimeDay": "85.74%",
+    "uptimeWeek": "85.74%",
+    "uptimeMonth": "85.74%",
+    "uptimeYear": "85.74%",
+    "time": 801,
+    "timeDay": 2050,
+    "timeWeek": 1561,
+    "timeMonth": 1303,
+    "timeYear": 801,
     "dailyMinutesDown": {
-      "2025-05-02": 20
+      "2025-05-02": 34
     }
   }
 ]
