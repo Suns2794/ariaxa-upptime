@@ -1,9 +1,10 @@
 name: Notificación por cambios de estado en Upptime
 
 on:
-  push:
-    branches:
-      - master
+  workflow_run:
+    workflows: ["Uptime CI"]
+    types:
+      - completed
 
 jobs:
   notify:
@@ -13,17 +14,14 @@ jobs:
     steps:
       - name: Checkout del repositorio
         uses: actions/checkout@v4
-        
+
       - name: Extraer mensaje del último commit
         id: estado
         run: |
           COMMIT_MSG=$(git log -1 --pretty=%B)
           echo "Último commit: $COMMIT_MSG"
-
-          # Determinar el tipo de cambio
-          echo "Último commit crudo:"
           echo "$COMMIT_MSG" | cat -v
-          
+
           if echo "$COMMIT_MSG" | grep -qF "🟥"; then
             echo "estado=down" >> $GITHUB_OUTPUT
           elif echo "$COMMIT_MSG" | grep -qF "⚠"; then
@@ -39,11 +37,11 @@ jobs:
         run: |
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="🚨 Caída detectada por Upptime del ambiente de producción. Verifica 👉 https://Suns2794.github.io/ariaxa-upptime/"
-            
+            -d text="🚨 Caída detectada por Upptime. Revisa 👉 https://Suns2794.github.io/ariaxa-upptime/"
+
       - name: Enviar notificación si hay rendimiento degradado
         if: ${{ steps.estado.outputs.estado == 'degraded' }}
         run: |
-          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_CHAT_ID }}" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="⚠️ Advertencia: uno o más sitios presentan rendimiento degradado. Revisa 👉 https://Suns2794.github.io/ariaxa-upptime/"
+            -d text="⚠️ Advertencia: uno o más sitios presentan rendimiento degradado. Verifica 👉 https://Suns2794.github.io/ariaxa-upptime/"
