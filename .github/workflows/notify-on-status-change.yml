@@ -18,23 +18,24 @@ jobs:
       - name: Extraer mensaje del último commit
         id: estado
         run: |
-          COMMIT_MSG=$(git log -1 --pretty=%B)
-          echo "📝 Commit recibido:"
-          echo "$COMMIT_MSG" | cat -v
-
-          if echo "$COMMIT_MSG" | grep -qi "is down"; then
+          COMMIT_MSGS=$(git log -5 --pretty=%B)
+          echo "📝 Últimos 5 commits:"
+          echo "$COMMIT_MSGS" | cat -v
+          
+          if echo "$COMMIT_MSGS" | grep -qi "is down"; then
             echo "estado=down" >> $GITHUB_OUTPUT
             echo "🔴 Se detectó caída"
-          elif echo "$COMMIT_MSG" | grep -qi "has degraded"; then
+          elif echo "$COMMIT_MSGS" | grep -qi "has degraded"; then
             echo "estado=degraded" >> $GITHUB_OUTPUT
             echo "⚠️ Se detectó rendimiento degradado"
-          elif echo "$COMMIT_MSG" | grep -qi "is up"; then
+          elif echo "$COMMIT_MSGS" | grep -qi "is up"; then
             echo "estado=up" >> $GITHUB_OUTPUT
             echo "🟢 Se detectó recuperación"
           else
             echo "estado=none" >> $GITHUB_OUTPUT
             echo "ℹ️ No se detectó cambio de estado relevante"
           fi
+
 
       - name: Enviar notificación si hubo caída
         if: ${{ steps.estado.outputs.estado == 'down' }}
