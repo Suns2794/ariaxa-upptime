@@ -2,7 +2,8 @@
 owner: Suns2794 # Your GitHub organization or username, where this repository lives
 repo: ariaxa-upptime # The name of this repository
 
-updateIntervalMinutes: 0
+defaults:
+  skipDeleteIssues: true
 
 sites:
   - name: Ariaxa Apps
