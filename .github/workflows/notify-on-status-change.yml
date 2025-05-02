@@ -25,7 +25,7 @@ jobs:
           if echo "$COMMIT_MSGS" | grep -qi "is down"; then
             echo "estado=down" >> $GITHUB_OUTPUT
             echo "🔴 Se detectó caída"
-          elif echo "$COMMIT_MSGS" | grep -qi "has degraded"; then
+          elif echo "$COMMIT_MSGS" | grep -qi "is degraded"; then
             echo "estado=degraded" >> $GITHUB_OUTPUT
             echo "⚠️ Se detectó rendimiento degradado"
           elif echo "$COMMIT_MSGS" | grep -qi "is up"; then
