@@ -28,14 +28,6 @@ sites:
 
     skipDeleteIssues: true
 
-  - name: Ariaxa Test
-    url: https://pruebas.ariaxa.com/config/login_su.php
-    method: GET
-    maxResponseTime: 10000
-    retryCount: 3
-    expectedStatusCodes: [200, 301, 302, 403]
-    skipDeleteIssues: true
-
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
