@@ -1,7 +1,7 @@
 url: https://pruebas.ariaxa.com/config/login_su.php
-status: degraded
-code: 504
-responseTime: 10253
-lastUpdated: 2025-05-02T19:40:29.504Z
+status: down
+code: 503
+responseTime: 320
+lastUpdated: 2025-05-02T19:42:44.295Z
 startTime: 2025-05-02T19:19:47.090Z
 generator: Upptime <https://github.com/upptime/upptime>
