@@ -1,13 +1,11 @@
 notifications:
   - type: Telegram
-    bot_token: ${{ secrets.TELEGRAM_SECRET|| github.token }}
     chat_id: "-4522419326"
      message: |
       :warning: El servidor {{ name }} ({{ url }}) está fuera de servicio desde {{ start }}. :red_circle:
 
 notifications:
   - type: Telegram
-    bot_token: ${{ secrets.TELEGRAM_SECRET|| github.token }}
     chat_id: "894634956"
     message: |
       :green_circle: El servidor {{ name }} ({{ url }}) está nuevamente en línea desde {{ end }}.
