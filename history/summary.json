@@ -4,17 +4,17 @@
     "url": "https://ariaxa.com/app-project/",
     "icon": "https://icons.duckduckgo.com/ip3/ariaxa.com.ico",
     "slug": "ariaxa-apps",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 708,
-    "timeDay": 564,
-    "timeWeek": 691,
-    "timeMonth": 678,
-    "timeYear": 708,
+    "time": 705,
+    "timeDay": 511,
+    "timeWeek": 668,
+    "timeMonth": 670,
+    "timeYear": 705,
     "dailyMinutesDown": {}
   }
 ]
