@@ -1,7 +1,7 @@
 url: https://ariaxa.com/app-project/
-status: degraded
-code: 504
-responseTime: 15100
-lastUpdated: 2025-10-31T16:50:38.037Z
+status: up
+code: 200
+responseTime: 711
+lastUpdated: 2025-10-31T16:52:45.617Z
 startTime: 2024-11-15T15:50:03.720Z
 generator: Upptime <https://github.com/upptime/upptime>
