@@ -6,13 +6,13 @@
     "slug": "ariaxa-apps",
     "status": "up",
     "uptime": "99.80%",
-    "uptimeDay": "99.67%",
-    "uptimeWeek": "99.95%",
-    "uptimeMonth": "99.98%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "99.64%",
     "time": 504,
-    "timeDay": 478,
-    "timeWeek": 479,
+    "timeDay": 437,
+    "timeWeek": 482,
     "timeMonth": 471,
     "timeYear": 502,
     "dailyMinutesDown": {
@@ -34,8 +34,7 @@
       "2026-06-10": 190,
       "2026-08-06": 20,
       "2026-08-13": 336,
-      "2026-08-17": 5,
-      "2026-09-13": 5
+      "2026-08-17": 5
     }
   }
 ]
