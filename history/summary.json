@@ -4,14 +4,14 @@
     "url": "https://ariaxa.com/app-project/",
     "icon": "https://icons.duckduckgo.com/ip3/ariaxa.com.ico",
     "slug": "ariaxa-apps",
-    "status": "up",
+    "status": "down",
     "uptime": "99.79%",
-    "uptimeDay": "99.41%",
-    "uptimeWeek": "99.92%",
-    "uptimeMonth": "99.49%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "99.51%",
     "uptimeYear": "99.60%",
     "time": 499,
-    "timeDay": 489,
+    "timeDay": 466,
     "timeWeek": 476,
     "timeMonth": 467,
     "timeYear": 499,
@@ -35,8 +35,7 @@
       "2026-08-13": 336,
       "2026-08-17": 5,
       "2026-09-24": 44,
-      "2026-10-06": 170,
-      "2026-10-15": 9
+      "2026-10-06": 170
     }
   }
 ]
