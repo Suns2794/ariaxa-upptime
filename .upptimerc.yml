@@ -19,7 +19,7 @@ status-website:
   # cname: ariaxa.com
   theme: dark
   baseUrl: /ariaxa-upptime
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  #logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Ariaxa Uptime
   introTitle: "**Ariaxa** uses GitHub's open-source solution Upptime to provide clients with detailed monitoring logs and status updates for their applications."
   introMessage: With this tool, our clients can easily track the availability of their applications, ensuring transparency and continuous performance monitoring.
